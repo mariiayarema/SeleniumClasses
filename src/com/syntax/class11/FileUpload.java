@@ -1,6 +1,7 @@
 package com.syntax.class11;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +21,7 @@ public class FileUpload {
 
         WebElement chooseFile=driver.findElement(By.id("file-upload"));
         chooseFile.sendKeys("/Users/mariiayarema/Desktop/Book8.xlsx");
-      
+        chooseFile.sendKeys(Keys.TAB);
 
         WebElement uploadButton=driver.findElement(By.id("file-submit"));
         uploadButton.click();

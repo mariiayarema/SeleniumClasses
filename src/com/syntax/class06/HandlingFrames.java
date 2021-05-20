@@ -15,6 +15,7 @@ public class HandlingFrames {
         //switch by index
         driver.switchTo().frame(0);
 
+
         WebElement textBox=driver.findElement(By.id("name"));
         Thread.sleep(1000);
         textBox.sendKeys("Bla bla bla");
@@ -22,6 +23,7 @@ public class HandlingFrames {
 
         //coming out of frame to main page
         driver.switchTo().defaultContent();
+
 
        //switching back to frame
         // frame by name

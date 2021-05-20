@@ -18,7 +18,5 @@ public class FluentWaitDemo {
                 .ignoring(NoSuchElementException.class);
 
 
-
-
     }
 }

@@ -17,6 +17,7 @@ public class Homework1 {
         driver.findElement(By.cssSelector("input#txtPassword")).sendKeys("Hum@nhrm123");
         driver.findElement(By.cssSelector("input#btnLogin")).click();
         WebElement logoElement = driver.findElement(By.xpath("//img[@src='/humanresources/symfony/web/webres_5acde3dbd3adc6.90334155/themes/default/images/syntax.png']"));
+
         if(logoElement.isDisplayed()){
             System.out.println("Syntax logo is displayed");
         }else{

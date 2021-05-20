@@ -17,7 +17,9 @@ public class HandlingMultiSelectDD {
         Thread.sleep(1000);
         driver.get(url);
         WebElement multiSelectDD=driver.findElement(By.id("multi-select"));
+
         Select select=new Select(multiSelectDD);
+
 
         boolean isMultiple=select.isMultiple();
         System.out.println(isMultiple);
@@ -26,6 +28,7 @@ public class HandlingMultiSelectDD {
             for (WebElement option:options) {
                 String optionTextext=option.getText();
                 select.selectByVisibleText(optionTextext);
+
                 Thread.sleep(1000);
             }
            // select.deselectAll();

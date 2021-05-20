@@ -29,6 +29,7 @@ public class HandlingDDWithIterator {
         }
         boolean isMultiple=select.isMultiple();
         System.out.println(isMultiple);
+
     }
 }
 //alerts and frames

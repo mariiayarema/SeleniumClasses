@@ -25,6 +25,7 @@ public class HW1 {
 
         //Month DD
         WebElement monthDD=driver.findElement(By.cssSelector("select#month"));//locate dropdown
+
         Select select=new Select(monthDD);//create select class
         List<WebElement> monthOptions=select.getOptions();
         int monthOptionSize=monthOptions.size();
